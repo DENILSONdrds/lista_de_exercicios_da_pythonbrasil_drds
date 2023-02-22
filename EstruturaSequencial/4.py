@@ -10,3 +10,4 @@ nota_4 = float(input('Digite a nota 4 : '))
 media = (nota_1 + nota_2 + nota_3 + nota_4) / 4
 
 print(f'A média das notas é : {media}')
+

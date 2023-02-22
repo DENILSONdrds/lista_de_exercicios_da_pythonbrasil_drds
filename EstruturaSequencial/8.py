@@ -8,3 +8,4 @@ horas_trabalhada = int(input('Digite a quantidade de horas trabalhada: '))
 salario = valor_hora * horas_trabalhada
 
 print(f'Seu salario no mês é : R$ {salario}.')
+
