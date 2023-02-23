@@ -1,9 +1,9 @@
 """Faça um Programa que leia três números e mostre-os em ordem decrescente.
 """
 
-num1 = 10
-num2 = 15
-num3 = 2
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+num3 = float(input("Digite o terceiro número: "))
 
 if num1 >= num2 and num3:
     if num2 >= num3:
