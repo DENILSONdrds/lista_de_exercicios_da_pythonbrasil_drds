@@ -5,24 +5,21 @@ Quantas vezes aparecem as vogais a, e, i, o, u.
 """
 
 
-def contar_vogais_e_espaço(frase):
+def contar_vogais_e_espacos(frase):
     # Conta espaços em branco
     qtd_espacos = frase.count(" ")
 
     # Conta vogais
-    qtd_vogais = 0
+    qtd_vogais = {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0}
     for letra in frase:
-        if letra in "aeiouAEIOU":
-            letra
-            qtd_vogais += 1
-
-    print("A frase digitada é: ", frase)
-    print("Quantidade de espaços em branco: ", qtd_espacos)
-    print("Quantidade de vogais: ", qtd_vogais)
+        if letra in qtd_vogais:
+            qtd_vogais[letra] += 1
+    print(f'Quantidade de vogais: \n {qtd_vogais}')
+    print(f'Quantidade espaços : {qtd_espacos}\n')
+    return qtd_espacos, qtd_vogais
 
 
 if __name__ == '__main__':
-    contar_vogais_e_espaço('loki o deus da mentira e da discordia')
-    print()
-    contar_vogais_e_espaço('Hades o deus do submundo')
+    contar_vogais_e_espacos('loki o deus da mentira e da discordia')
+    contar_vogais_e_espacos('Hades o deus do submundo')
 
