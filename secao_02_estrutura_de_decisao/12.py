@@ -59,5 +59,3 @@ def aumento_salarial(salario_inicial):
           f'Valor do aumento: {valor_aumento:.2f} R$\n'
           f'Novo Salário: {salario_com_aumento:.2f} R$')
 
-
-
