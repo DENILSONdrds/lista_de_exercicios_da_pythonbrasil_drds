@@ -40,6 +40,7 @@ def palindromo(texto):
     else:
         print(f"'{texto} não é um palíndromo.'")
 
+
 if __name__ == '__main__':
     palindromo('loki o deus da mentira')
     palindromo('arara e arara')
